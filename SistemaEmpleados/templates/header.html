@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>Flask</title>
+</head>
+<body>
+    <style>
+        body{
+        background-color: gray;
+        }
+    </style>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+        
+            <h3 class="btn-dark" >Gestor de empleados </h3>
+        
+        <div id="my-nav" class="collapse navbar-collapse ">
+            <ul class="navbar-nav mr-auto ">
+                <li class="nav-item active">
+                    <a class="nav-link btn-dark" href="{{url_for('index')}}">Empleados<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active ">
+                    <a href="{{url_for('create')}}" class="nav-link btn-dark ">Ingresar nuevo empleado<span class="sr-only">(current)</span></a>   
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        
